@@ -1,0 +1,155 @@
+/*Observações:
+. indeica que é uma classe, como por exemplo ".nome"
+# indica que é id, ex: "#nome
+Ao usar o "none" estou declarando que não tem
+O "top" quer dizer que é em cima.
+O "bottom" que é embaixo*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Dentro do body a gente zerou qualquer margem o paading (tipo uma caixa) que possa vir por padrão.
+Depois tem a fonte que será usada para as letras, caso*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(37, 37, 39);
+}
+
+/*O "display flex" é usado para flexibilizar a como ficará a ordem dos objetos, quando colocado por padrão fica um ao lado do outro.
+"justify content" indica como ficará organizado dentro de onde está o display */
+#menu-h {
+  background-color: rgb(37, 37, 39);
+  display: flex;
+  justify-content: center;
+}
+
+/*O list style com none é pra tirar essa bolinha aqui • */
+#menu-h ul {
+  list-style: none;
+  display: flex;
+}
+
+#menu-h ul li {
+  margin: 2px;
+}
+
+/*O paading é pra criar uma caixa. "text-decoration" é pra tirar o sublinhado. "trasition" indica que tem uma transição*/
+#menu-h ul li a {
+  color: #FFF;
+  padding: 20px;
+  text-decoration: none;
+  transition: background .4s;
+}
+
+/*hover indica que vai aparecer quando passar o cursor por cima*/
+#menu-h ul li a:hover {
+  background-color: rgb(94, 50, 168);
+}
+
+/*O "text-align" indica onde vai ficar de maneira horizontal na tela, lado direito, esquerdo, centro*/
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Nesse caso o width indica que a largura da imagem ocupará 100% da tela, mas se a tela for maior que 550px ele só irá até aí
+"border-radius" é pra deixar a borda redonda
+e "animation" indica que tem uma animação, alí temos o nome dela, quanto tempo dura e que ela é infinita*/
+#logo {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+  animation: flutuar 5s infinite;
+}
+
+/*Aqui é como se estivesse em um plano cartesiano de cabeça pra baixo, no 0% a imagem estará em 10px, em 50% ela tem que está em -10px
+então ela vai subindo, depois, em 100% ela desce pra 10px. Como inicio no mesmo local que termina não dá de ver reiniciando a animação*/
+@keyframes flutuar {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.lista_eventos {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.lista_eventos ul {
+  list-style: none;
+  display: flex;
+}
+
+.lista_eventos ul li {
+  margin: 10px;
+}
+
+.lista_eventos ul li a {
+  font-size: large;
+  color: rgb(94, 50, 168);
+  text-decoration: none;
+}
+
+#mp {
+  background-color: rgb(141, 139, 139);
+}
+
+#ct {
+  color: white;margin-bottom: 25px;
+}
+
+.eventos {
+  margin-bottom: 100px;
+}
+
+/*Cada capa terá 20% de largura, levando em consideração a tela do usuário. Olhe o @media */
+.capa {
+  border-radius: 10px;
+  width: 19%;
+  transition: transform 0.3s;
+  border-top: 20px solid rgb(37, 37, 39);
+  border-bottom: 20px solid rgb(37, 37, 39);
+}
+w
+.capa:hover {
+  border-top: 20px solid rgb(94, 50, 168);
+  border-bottom: 20px solid rgb(94, 50, 168);
+}
+
+.subtopico{
+  margin-bottom: 0;
+  margin-left: 0.7%;
+}
+
+.imagemif {
+  height: 50px;
+  width: 60px;
+  border-radius: 50px;
+  margin-bottom: -20px;
+}
+
+/*Aqui como o display está "none" ele não aparecerá por padrão*/
+.pc-only {
+  display: none;
+}
+
+/*Mas essa parte diz que se a tela for de no mínimo de 701px aparecerá, ou seja se for de 701 pra cima */
+@media (min-width: 701px) {
+  .pc-only {
+    display: inline;
+  }
+}
+
+/*"Esssa parte diz que se a tela for menor que 700px, ao invés de ocupar 19% da tela, as imagens vão ocupar 90%"*/
+@media  (max-width: 700px) {
+  .capa{
+    width: 90%;
+  }
+}

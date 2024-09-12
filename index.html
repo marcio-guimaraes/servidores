@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!--É usado para declarar e versão do html, no caso o html 5-->
+<html lang="pt-br">
+    <!--No head temos o título, o link da imagem que fica ao lado do título e o link do css-->
+<head>
+    <title>Info News</title>
+    <link rel="shortcut icon" href="imagens/imagem_do_titulo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--A tag "nav" indica que é um menu de navegação. A class "pc-only" está descrita no css.
+    A tag "a" é usada como âncora para ligar à algo-->
+    <nav id="menu-h">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="#">Adm<span class="pc-only">inistração</span></a></li>
+            <li><a href="#">Agro<span class="pc-only">pecuária</span></a></li>
+            <li><a href="#">Info<span class="pc-only">rmática</span></a></li>
+            <li><a href="#">Meio<span class="pc-only"> ambiente</span></a></li>
+            <li><a href="#" id="mp">Servidores</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!--A imagem que tem uma animação, sua animação é definida no css-->
+        <img src="imagens/iinf.png" id="logo">
+    </header>
+    <div class="lista_eventos">
+        <ul>
+            <li><a href="#jinter">Interclasses</a></li>
+            <li><a href="#feling">Feira de linguas</a></li>
+            <li><a href="#outros">Outros eventos</a></li>
+        </ul>
+    </div>
+    <!--Dentro da div "ct" está os tópicos da classe "eventos"-->
+    <div id="ct">
+        <div id="jinter" class="eventos">
+            <!--O mp liga ao nome servidores lá na parte superior do site, para que os usuários voltem ao menu-->
+            <h2><a href="#mp"><img src="imagens/jinter.jpg" title="Clique para voltar ao topo da página" class="imagemif"></a>Jogos Interclasses</h2>
+            <div>
+                <h3 class="subtopico">2023</h3>
+                <!--Na tag "a" temos o link para redirecionar à página que está o vídeo. Na tag "img" o caminho do da capa dado pelo "src"-->
+                <a href="jinter2023_profpedro.html"><img src="imagens/jinter2023_profpedro.png" class="capa"></a>
+                <a href="jinter2023_demontye.html"><img src="imagens/jinter2023_demontye.png" class="capa"></a>
+                <a href="jinter2023_alessandro.html"><img src="imagens/jinter2023_alessandro.png" class="capa"></a>
+                <a href="jinter2023_profwilmar.html"><img src="imagens/jinter2023_profwilmar.png" class="capa"></a>
+                <a href="jinter2023_limpeza.html"><img src="imagens/jinter2023_limpeza.png" class="capa"></a>
+            </div>
+        </div>
+        <div id="feling" class="eventos">
+            <h2><a href="#mp"><img src="imagens/pczin.gif" title="Clique para voltar ao topo da página" class="imagemif"></a>Feira de linguas</h2>
+            <div>
+                <h3 class="subtopico">2023</h3>
+                <a href="feling2023_profaurino.html"><img src="imagens/feling2023_profaurino.png" class="capa"></a>
+                <a href="feling2023_profwilmar.html"><img src="imagens/feling2023_profwilmar.png" class="capa"></a>
+                <a href="feling2023_profricardo.html"><img src="imagens/feling2023_profricardo.png" class="capa"></a>
+            </div>
+        </div>
+        <div id="outros" class="eventos">
+            <h2><a href="#mp"><img src="imagens/eventos.jpg" title="Clique para voltar ao topo da página" class="imagemif"></a>Outros eventos</h2>
+            <div>
+                <h3 class="subtopico">Sinfcor</h3>
+                <a href="sinfcor2023_proffelipe.html"><img src="imagens/sinfcor2023_proffelipe.png" class="capa"></a>
+                <a href="sinfcor2023_profjuan.html"><img src="imagens/sinfcor2023_profjuan.png" class="capa"></a>
+            </div>
+            <div>
+                <h3 class="subtopico">Projeto sobre acessibilidade</h3>
+                <a href="proj_acessibilidade_lais.html"><img src="imagens/proj_acessibilidade_lais.png" class="capa"></a>
+                <a href="proj_acessibilidade_profjuan.html"><img src="imagens/proj_acessibilidade_profjuan.png" class="capa"></a>
+                <a href="proj_acessibilidade_profroniele.html"><img src="imagens/proj_acessibilidade_profroniele.png" class="capa"></a>
+                <a href="proj_acessibilidade_anaian.html"><img src="imagens/proj_acessibilidade_anaian.png" class="capa"></a>
+            </div>
+            <div>
+                <h3 class="subtopico">Workshop projetos integradores</h3>
+                <a href="workproj_integradores2023_profalysson.html"><img src="imagens/workproj_integradores2023_profalysson.png" class="capa"></a>
+                <a href="workproj_integradores2023_profjean.html"><img src="imagens/workproj_integradores2023_profjean.png" class="capa"></a>
+                <a href="workproj_integradores2023_profpaulo.html"><img src="imagens/workproj_integradores2023_profpaulo.png" class="capa"></a>
+                <a href="workproj_integradores2023_profisidio.html"><img src="imagens/workproj_integradores2023_profisidio.png" class="capa"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

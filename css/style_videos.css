@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body{
+    background-color: rgb(37, 37, 39);
+    font-family: 'Open Sans', sans-serif;
+    color: lemonchiffon;
+    font-family: monospace;
+}
+div {
+    display: flex;
+}
+
+img{
+    height: 50px;
+    margin-right: 25px;
+}
+
+.vid video{
+    width: 1200px;
+}
